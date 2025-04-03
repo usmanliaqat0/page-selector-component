@@ -101,8 +101,8 @@ export default function PageSelector() {
   const regularPages = useMemo(() => pages.slice(1), [pages]);
 
   return (
-    <div className="flex flex-col gap-4">
-      <div className="w-[370px] p-[15px] bg-white rounded-md border border-[#EEEEEE] relative shadow-[0px_8px_15px_0px_rgba(20,20,20,0.12),0px_0px_4px_0px_rgba(20,20,20,0.1)]">
+    <div className="flex flex-col items-center gap-4 w-full p-2">
+      <div className="w-full md:w-[370px] p-[15px] bg-white rounded-md border border-[#EEEEEE] relative shadow-[0px_8px_15px_0px_rgba(20,20,20,0.12),0px_0px_4px_0px_rgba(20,20,20,0.1)]">
         <div className="flex flex-col h-full">
           <div>
             <div className="flex items-center justify-between">
@@ -146,7 +146,7 @@ export default function PageSelector() {
       </div>
 
       {showSelected && selectedPages.length > 0 && (
-        <div className="w-[370px] p-[15px] bg-white rounded-md border border-[#EEEEEE] shadow-sm">
+        <div className="w-full md:w-[370px] p-[15px] bg-white rounded-md border border-[#EEEEEE] shadow-sm">
           <div className="flex flex-col gap-2">
             <span className="text-[#1F2128] text-sm font-medium">
               Selected pages:
